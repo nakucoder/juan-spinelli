@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 import { Mail, Github, Linkedin, ArrowUpRight } from "lucide-react";
-
 const links = [
   {
     label: "Email",
     value: "juanakuspinelli@gmail.com",
-    href: "mailto:juanakuspinelli@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&to=juanakuspinelli@gmail.com",
     icon: Mail,
   },
   {
@@ -21,7 +20,6 @@ const links = [
     icon: Linkedin,
   },
 ];
-
 const ContactSection = () => {
   return (
     <section id="contact" className="py-24 px-6">
@@ -38,13 +36,12 @@ const ContactSection = () => {
             Open to opportunities and collaboration.
           </p>
         </motion.div>
-
         <div className="grid sm:grid-cols-3 gap-4">
           {links.map((link, i) => (
             <motion.a
               key={link.label}
               href={link.href}
-              target={link.label !== "Email" ? "_blank" : undefined}
+              target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +58,6 @@ const ContactSection = () => {
             </motion.a>
           ))}
         </div>
-
         <div className="mt-20 text-center">
           <p className="text-xs text-muted-foreground/40 font-mono">
             © {new Date().getFullYear()} Juan Spinelli. Built with passion.
@@ -71,5 +67,4 @@ const ContactSection = () => {
     </section>
   );
 };
-
 export default ContactSection;
