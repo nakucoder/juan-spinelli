@@ -25,7 +25,7 @@ const HeroSection = () => {
           </p>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-            Juan <span className="text-gradient">Spinelli</span>
+            Juan Spinelli
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground mb-3 font-light">
