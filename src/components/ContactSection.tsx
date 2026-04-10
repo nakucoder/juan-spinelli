@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, ArrowUpRight } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 const links = [
   {
     label: "Email",
     value: "juanakuspinelli@gmail.com",
-    href: "https://mail.google.com/mail/?view=cm&to=juanakuspinelli@gmail.com",
+    href: "mailto:juanakuspinelli@gmail.com",
     icon: Mail,
   },
   {
@@ -51,9 +51,8 @@ const ContactSection = () => {
             >
               <link.icon className="w-5 h-5 mx-auto mb-3 text-muted-foreground group-hover:text-primary transition-colors" />
               <p className="text-xs font-mono uppercase tracking-wider text-muted-foreground mb-1">{link.label}</p>
-              <p className="text-sm text-foreground flex items-center justify-center gap-1">
+              <p className="text-sm text-foreground">
                 {link.value}
-                <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 text-primary transition-opacity" />
               </p>
             </motion.a>
           ))}
