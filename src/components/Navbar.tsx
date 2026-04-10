@@ -1,38 +1,36 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-
 const navItems = [
-  { label: "Experience", href: "#experience" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "Experience", href: "experience" },
+  { label: "Skills", href: "skills" },
+  { label: "Projects", href: "projects" },
+  { label: "Contact", href: "contact" },
 ];
-
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-
+  const scrollTo = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+    setOpen(false);
+  };
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="container max-w-3xl flex items-center justify-between h-14 px-6">
-        <a href="#" className="font-bold text-sm tracking-tight">
+        <button onClick={() => scrollTo("hero")} className="font-bold text-sm tracking-tight">
           J<span className="text-primary">S</span>
-        </a>
-
-        {/* Desktop */}
+        </button>
         <div className="hidden sm:flex items-center gap-6">
           {navItems.map((item) => (
-            <a
+            <button
               key={item.label}
-              href={item.href}
+              onClick={() => scrollTo(item.href)}
               className="text-xs font-mono text-muted-foreground hover:text-primary transition-colors uppercase tracking-wider"
             >
               {item.label}
-            </a>
+            </button>
           ))}
         </div>
-
-        {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
           className="sm:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
@@ -40,8 +38,6 @@ const Navbar = () => {
           {open ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
         </button>
       </div>
-
-      {/* Mobile menu */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -52,14 +48,13 @@ const Navbar = () => {
           >
             <div className="px-6 py-4 flex flex-col gap-4">
               {navItems.map((item) => (
-                <a
+                <button
                   key={item.label}
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="text-sm font-mono text-muted-foreground hover:text-primary transition-colors uppercase tracking-wider"
+                  onClick={() => scrollTo(item.href)}
+                  className="text-sm font-mono text-muted-foreground hover:text-primary transition-colors uppercase tracking-wider text-left"
                 >
                   {item.label}
-                </a>
+                </button>
               ))}
             </div>
           </motion.div>
@@ -68,5 +63,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
