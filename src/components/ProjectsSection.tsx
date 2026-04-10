@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { FolderOpen, ExternalLink } from "lucide-react";
-
+import { FolderOpen } from "lucide-react";
 const projects = [
   {
     title: "TriMerge Auth System",
@@ -27,7 +26,6 @@ const projects = [
     accent: "accent" as const,
   },
 ];
-
 const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 px-6">
@@ -43,7 +41,6 @@ const ProjectsSection = () => {
             Projects
           </h2>
         </motion.div>
-
         <div className="grid sm:grid-cols-2 gap-5">
           {projects.map((project, i) => (
             <motion.div
@@ -54,18 +51,15 @@ const ProjectsSection = () => {
               transition={{ duration: 0.4, delay: i * 0.1 }}
               className="group glass-card rounded-lg p-5 hover:border-primary/30 transition-all duration-300"
             >
-              <div className="flex items-start justify-between mb-3">
+              <div className="mb-3">
                 <div className={`w-2 h-2 rounded-full mt-2 ${
                   project.accent === "accent" ? "bg-accent" : "bg-primary"
                 }`} />
-                <ExternalLink className="w-4 h-4 text-muted-foreground/30 group-hover:text-primary transition-colors" />
               </div>
-
               <h3 className="font-semibold text-foreground mb-2">{project.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                 {project.description}
               </p>
-
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <span
@@ -83,5 +77,4 @@ const ProjectsSection = () => {
     </section>
   );
 };
-
 export default ProjectsSection;
