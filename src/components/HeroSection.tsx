@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 
 const HeroSection = () => {
   const scrollToExperience = () => {
@@ -34,7 +34,7 @@ const HeroSection = () => {
             From the discipline of competitive tennis to building robust software —
             channeling resilience, strategic thinking, and relentless growth into every line of code.
           </p>
-          <div className="flex items-center justify-center gap-4 mb-16">
+          <div className="flex items-center justify-center gap-4 mb-6">
             <a href="https://github.com/nakucoder" target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-300">
               <Github className="w-5 h-5" />
             </a>
@@ -45,6 +45,14 @@ const HeroSection = () => {
               <Mail className="w-5 h-5" />
             </a>
           </div>
+          <a
+            href="https://nakucoder.github.io/juan-spinelli/Juan%20Spinelli%20Resume%20(1).pdf"
+            download
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-border/50 text-sm font-mono text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-300 mb-16"
+          >
+            <Download className="w-4 h-4" />
+            Download Resume
+          </a>
         </motion.div>
         <motion.button
           onClick={scrollToExperience}
