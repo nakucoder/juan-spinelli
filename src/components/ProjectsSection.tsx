@@ -43,6 +43,7 @@ const projects = [
     tags: ["Python", "ML", "Fitness"],
     accent: "accent" as const,
     github: "https://github.com/nakucoder/robofit-trainer",
+    demo: "https://nakucoder.github.io/robofit-trainer/",
   },
 ];
 
