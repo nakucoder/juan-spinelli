@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FolderOpen, ExternalLink } from "lucide-react";
+import { FolderOpen, ExternalLink, Globe } from "lucide-react";
 
 const projects = [
   {
