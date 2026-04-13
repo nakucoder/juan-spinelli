@@ -18,6 +18,10 @@ const skillGroups = [
     label: "Specialized",
     skills: ["Unity", "ArcGIS", "Oculus / VR"],
   },
+  {
+    label: "Languages Spoken",
+    skills: ["English (Fluent)", "Spanish (Fluent)"],
+  },
 ];
 
 const SkillsSection = () => {
