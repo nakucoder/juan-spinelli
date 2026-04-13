@@ -45,6 +45,14 @@ const HeroSection = () => {
               <Mail className="w-5 h-5" />
             </a>
           </div>
+          <a
+            href="https://nakucoder.github.io/juan-spinelli/Juan%20Spinelli%20Resume%20(1).pdf"
+            download
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-border/50 text-sm font-mono text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-300 mb-16"
+          >
+            <Download className="w-4 h-4" />
+            Download Resume
+          </a>
         </motion.div>
         <motion.button
           onClick={scrollToExperience}
