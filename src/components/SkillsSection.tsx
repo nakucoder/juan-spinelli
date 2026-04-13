@@ -19,6 +19,10 @@ const skillGroups = [
     skills: ["Unity", "ArcGIS", "Oculus / VR"],
   },
   {
+    label: "Testing & Tools",
+    skills: ["Jest", "Swagger", "Postman", "REST APIs"],
+  },
+  {
     label: "Languages Spoken",
     skills: ["English (Fluent)", "Spanish (Fluent)"],
   },
