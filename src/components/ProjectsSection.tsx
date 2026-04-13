@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FolderOpen, ExternalLink } from "lucide-react";
+import { FolderOpen, ExternalLink, Globe } from "lucide-react";
 
 const projects = [
   {
@@ -43,6 +43,7 @@ const projects = [
     tags: ["Python", "ML", "Fitness"],
     accent: "accent" as const,
     github: "https://github.com/nakucoder/robofit-trainer",
+    demo: "https://nakucoder.github.io/robofit-trainer/",
   },
 ];
 
@@ -77,7 +78,7 @@ const ProjectsSection = () => {
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap items-center gap-2">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
@@ -86,6 +87,18 @@ const ProjectsSection = () => {
                       {tag}
                     </span>
                   ))}
+                  {"demo" in project && project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="ml-auto inline-flex items-center gap-1 text-[11px] font-mono px-2 py-0.5 rounded bg-primary/20 text-primary hover:bg-primary/30 transition-colors"
+                    >
+                      <Globe className="w-3 h-3" />
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </>
             );
