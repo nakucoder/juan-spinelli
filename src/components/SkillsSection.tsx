@@ -8,11 +8,11 @@ const skillGroups = [
   },
   {
     label: "Frontend",
-    skills: ["HTML", "CSS", "React", "Web Design"],
+    skills: ["HTML", "CSS", "React", "Vite", "Recharts", "Web Design"],
   },
   {
     label: "Cloud & Tools",
-    skills: ["AWS", "Git", "Data Structures", "Algorithms"],
+    skills: ["AWS", "AWS EC2", "AWS S3", "Docker", "Docker Compose", "FastAPI", "Nginx", "GitHub Actions", "APScheduler", "Vercel", "Git", "Data Structures", "Algorithms"],
   },
   {
     label: "Specialized",
@@ -20,7 +20,7 @@ const skillGroups = [
   },
   {
     label: "Testing & Tools",
-    skills: ["Jest", "Swagger", "Postman", "REST APIs"],
+    skills: ["Jest", "Swagger", "Postman", "REST APIs", "boto3", "Docker Compose"],
   },
   {
     label: "Languages Spoken",
