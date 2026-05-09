@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-[100] bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="container max-w-3xl flex items-center justify-between h-14 px-6">
-        <button onClick={() => scrollTo("hero")} className="font-bold text-sm tracking-tight">
+        <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="font-bold text-sm tracking-tight">
           J<span className="text-primary">S</span>
         </button>
         <div className="hidden sm:flex items-center gap-6">
