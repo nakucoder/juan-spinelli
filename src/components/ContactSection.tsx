@@ -59,7 +59,7 @@ const ContactSection = () => {
         </div>
         <div className="mt-20 text-center">
           <p className="text-xs text-muted-foreground/40 font-mono">
-            © {new Date().getFullYear()} Juan Spinelli. Built with passion.
+            © {new Date().getFullYear()} Juan Spinelli.
           </p>
         </div>
       </div>

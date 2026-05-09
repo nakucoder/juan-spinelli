@@ -3,6 +3,21 @@ import { FolderOpen, ExternalLink, Globe } from "lucide-react";
 
 const projects = [
   {
+    title: "Miami Data Dashboard",
+    description: "A live React dashboard visualizing real-time Miami weather, cryptocurrency prices, and stock market data — pulling from three automated data pipelines running on AWS.",
+    tags: ["React", "Vite", "Recharts", "AWS", "Vercel"],
+    accent: "primary" as const,
+    github: "https://github.com/nakucoder/miami-dashboard",
+    demo: "https://miami-dashboard-plum.vercel.app",
+  },
+  {
+    title: "Miami Data Pipeline",
+    description: "Three automated data pipelines collecting live weather, crypto, and stock market data — containerized with Docker, deployed on AWS EC2, and storing JSON snapshots to S3 every hour.",
+    tags: ["Python", "FastAPI", "Docker", "AWS EC2", "AWS S3"],
+    accent: "accent" as const,
+    github: "https://github.com/nakucoder/miami-data-pipeline",
+  },
+  {
     title: "AI Gateway Engine",
     description: "High-performance Node.js/TypeScript API Gateway bridging frontend and Python AI Engine. Features JWT auth, rate limiting, and real-time health monitoring.",
     tags: ["Node.js", "TypeScript", "Python", "JWT"],
@@ -33,7 +48,7 @@ const projects = [
   {
     title: "Tetris Clone",
     description: "Classic Tetris game built from scratch with smooth animations, scoring system, and increasing difficulty levels.",
-    tags: ["JavaScript", "Game Dev", "Canvas"],
+    tags: ["Python", "Game Dev", "Pygame"],
     accent: "primary" as const,
     github: "https://github.com/nakucoder/Python-Tetris",
   },
