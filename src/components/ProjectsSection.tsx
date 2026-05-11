@@ -4,16 +4,16 @@ import { FolderOpen, ExternalLink, Globe } from "lucide-react";
 const projects = [
   {
     title: "Miami Data Dashboard",
-    description: "A live React dashboard visualizing real-time Miami weather, cryptocurrency prices, and stock market data — pulling from three automated data pipelines running on AWS.",
-    tags: ["React", "Vite", "Recharts", "AWS", "Vercel"],
+    description: "A live React dashboard visualizing real-time Miami weather, cryptocurrency prices, and stock market data — fetching from AWS API Gateway endpoints backed by Lambda functions.",
+    tags: ["React", "Vite", "Recharts", "API Gateway", "AWS Lambda", "Vercel"],
     accent: "primary" as const,
     github: "https://github.com/nakucoder/miami-dashboard",
     demo: "https://miami-dashboard-plum.vercel.app",
   },
   {
     title: "Miami Data Pipeline",
-    description: "Three automated data pipelines collecting live weather, crypto, and stock market data — containerized with Docker, deployed on AWS EC2, and storing JSON snapshots to S3 every hour.",
-    tags: ["Python", "FastAPI", "Docker", "AWS EC2", "AWS S3"],
+    description: "Three automated data pipelines collecting live weather, crypto, and stock market data — migrated from EC2/Docker to serverless AWS Lambda triggered by EventBridge, with API Gateway endpoints and CloudWatch monitoring.",
+    tags: ["Python", "FastAPI", "AWS Lambda", "EventBridge", "API Gateway", "CloudWatch", "SNS", "AWS S3"],
     accent: "accent" as const,
     github: "https://github.com/nakucoder/miami-data-pipeline",
   },

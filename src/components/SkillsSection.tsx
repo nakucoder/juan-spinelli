@@ -12,7 +12,7 @@ const skillGroups = [
   },
   {
     label: "Cloud & Tools",
-    skills: ["AWS EC2", "AWS S3", "Docker", "FastAPI", "Nginx", "GitHub Actions", "APScheduler", "Vercel", "Git"],
+    skills: ["AWS Lambda", "API Gateway", "EventBridge", "CloudWatch", "SNS", "AWS EC2", "AWS S3", "Docker", "FastAPI", "Nginx", "GitHub Actions", "APScheduler", "Vercel", "Git"],
   },
   {
     label: "Specialized",
