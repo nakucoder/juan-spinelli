@@ -3,6 +3,21 @@ import { FolderOpen, ExternalLink, Globe } from "lucide-react";
 
 const projects = [
   {
+    title: "Job Scraper Pipeline",
+    description: "Fully automated, multi-cloud AI-powered job scraper. Pulls 30-50 jobs/day from USAJobs, Remotive, and Jobicy. GCP Cloud Functions scrape on schedule, Groq Llama 3.3 70B enriches and scores each listing, Azure Cosmos DB handles deduplication, and AWS Lambda delivers a daily HTML email digest via SES.",
+    tags: ["Python", "GCP Cloud Functions", "Groq", "AWS Lambda", "Azure Cosmos DB", "AWS S3", "SES", "API Gateway", "React", "Vercel"],
+    accent: "accent" as const,
+    github: "https://github.com/nakucoder/job-scraper-pipeline",
+    demo: "https://job-scraper-dashboard-taupe.vercel.app",
+  },
+  {
+    title: "Athletic Intelligence",
+    description: "AI-powered fitness coaching mobile app with dual personas — OLI (performance mode) and EMI (recovery mode) — powered by Groq Llama 3.3 70B. Features physiological readiness scoring, fatigue and monotony engines, workout logging, weekly planning, and a journal with calendar view. Node.js/Express/Prisma backend deployed on Render.",
+    tags: ["React Native", "Expo", "Node.js", "Express", "Prisma", "PostgreSQL", "Groq", "Render"],
+    accent: "primary" as const,
+    github: "https://github.com/nakucoder/athletic-intelligence",
+  },
+  {
     title: "Miami Data Dashboard",
     description: "A live React dashboard visualizing real-time Miami weather, cryptocurrency prices, and stock market data — fetching from AWS API Gateway endpoints backed by Lambda functions.",
     tags: ["React", "Vite", "Recharts", "API Gateway", "AWS Lambda", "Vercel"],
