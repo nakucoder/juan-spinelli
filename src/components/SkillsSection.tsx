@@ -4,15 +4,15 @@ import { Code2 } from "lucide-react";
 const skillGroups = [
   {
     label: "Languages & Backend",
-    skills: ["Python", "Java", "JavaScript", "Node.js", "Express", "MongoDB", "Firebase", "JWT"],
+    skills: ["Python", "Java", "JavaScript", "TypeScript", "Node.js", "Express", "FastAPI", "MongoDB", "PostgreSQL", "Firebase", "Prisma", "JWT", "Groq"],
   },
   {
     label: "Frontend",
-    skills: ["HTML", "CSS", "React", "Vite", "Recharts", "Web Design"],
+    skills: ["HTML", "CSS", "React", "React Native", "Expo", "Vite", "Recharts", "Web Design"],
   },
   {
     label: "Cloud & Tools",
-    skills: ["AWS Lambda", "API Gateway", "EventBridge", "CloudWatch", "SNS", "AWS EC2", "AWS S3", "Docker", "FastAPI", "Nginx", "GitHub Actions", "APScheduler", "Vercel", "Git"],
+    skills: ["AWS Lambda", "API Gateway", "EventBridge", "CloudWatch", "SNS", "AWS SES", "AWS DynamoDB", "AWS EC2", "AWS S3", "GCP Cloud Functions", "GCP Cloud Scheduler", "Azure Cosmos DB", "Docker", "Nginx", "GitHub Actions", "APScheduler", "Vercel", "Render", "Git"],
   },
   {
     label: "Specialized",
