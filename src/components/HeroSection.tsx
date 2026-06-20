@@ -46,7 +46,7 @@ const HeroSection = () => {
             </a>
           </div>
           <a
-            href="https://nakucoder.github.io/juan-spinelli/Juan%20Spinelli%20Resume%20(1).pdf"
+            href="https://nakucoder.github.io/juan-spinelli/Juan_Spinelli_Resume_v5.pdf"
             download
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-border/50 text-sm font-mono text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-300 mb-16"
           >
