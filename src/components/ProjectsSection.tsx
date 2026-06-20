@@ -42,6 +42,10 @@ const projects = [
   {
     title: "AI Firebase Dashboard",
     description: "Full-stack AI Dashboard integrated with Firebase for Authentication and Storage, connected to a custom Python AI Engine.",
+    tags: ["Firebase", "AI", "Python", "TypeScript"],
+    accent: "accent" as const,
+    github: "https://github.com/nakucoder/ai-firebase-dashboard",
+  },
   {
     title: "Tetris Clone",
     description: "Classic Tetris game built from scratch with smooth animations, scoring system, and increasing difficulty levels.",
