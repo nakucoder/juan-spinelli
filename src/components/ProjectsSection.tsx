@@ -42,24 +42,6 @@ const projects = [
   {
     title: "AI Firebase Dashboard",
     description: "Full-stack AI Dashboard integrated with Firebase for Authentication and Storage, connected to a custom Python AI Engine.",
-    tags: ["TypeScript", "Firebase", "AI", "Python"],
-    accent: "accent" as const,
-    github: "https://github.com/nakucoder/ai-firebase-dashboard",
-  },
-  {
-    title: "TriMerge Auth System",
-    description: "Secure authentication platform with JWT tokens and role-based access control for enterprise consulting workflows.",
-    tags: ["JWT", "RBAC", "Node.js", "Express"],
-    accent: "primary" as const,
-    github: null,
-  },
-  {
-    title: "TriMerge AI Proposal Builder",
-    description: "AI-powered tool that automates and streamlines the creation of consulting proposals using natural language processing.",
-    tags: ["AI", "Python", "Firebase"],
-    accent: "accent" as const,
-    github: null,
-  },
   {
     title: "Tetris Clone",
     description: "Classic Tetris game built from scratch with smooth animations, scoring system, and increasing difficulty levels.",
